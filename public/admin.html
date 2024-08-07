@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurant Admin - Orders</title>
+</head>
+<body>
+  <h1>Order Management</h1>
+  <ul id="order-list"></ul>
+  <script>
+    async function fetchOrders() {
+      const response = await fetch('/api/admin/orders');
+      const orders = await response.json();
+      const orderList = document.getElementById('order-list');
+      orderList.innerHTML = '';
+      orders.forEach(order => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Order ID: ${order.id}, Status: ${order.status}`;
+        orderList.appendChild(listItem);
+      });
+    }
+
+    fetchOrders();
+    setInterval(fetchOrders, 5000); // Refresh every 5 seconds
+  </script>
+</body>
+</html>

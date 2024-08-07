@@ -1,6 +1,5 @@
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
@@ -8,10 +7,13 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  color: #333;
 }
 
 h1, h2 {
   color: #333;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 #menu, #cart {
@@ -20,25 +22,42 @@ h1, h2 {
 }
 
 .menu-item, .cart-item {
-  background: white;
-  padding: 10px;
-  margin: 5px;
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover, .cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item button, .cart-item button {
-  padding: 5px 10px;
+  padding: 10px 15px;
   background: #28a745;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
 .menu-item button:hover, .cart-item button:hover {
   background: #218838;
+}
+
+@media (max-width: 600px) {
+  .menu-item, .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

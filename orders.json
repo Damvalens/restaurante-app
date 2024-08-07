@@ -61,5 +61,29 @@
       "name": "Ensalada",
       "price": 4000
     }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Hamburguesa",
+      "price": 5000
+    },
+    {
+      "id": 2,
+      "name": "Pizza",
+      "price": 7000
+    },
+    {
+      "id": 3,
+      "name": "Ensalada",
+      "price": 4000
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "Hamburguesa",
+      "price": 5000
+    }
   ]
 ]
