@@ -16,7 +16,7 @@ const menu = [
   { "id": 6, "name": "🥞 Panqueques", "price": 10000, "category": "desayuno" },
   { "id": 7, "name": "🍲 Sopa", "price": 15000, "category": "almuerzo" },
   { "id": 8, "name": "🍣 Sushi", "price": 35000, "category": "cena" },
-  { "id": 9, "name": "☕ Café", "price": 35000, "category": "cena" }
+  { "id": 9, "name": "☕ Café", "price": 35000, "category": "desayuno" }
 ];
 
 app.get('/menu', (req, res) => {
