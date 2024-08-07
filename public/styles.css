@@ -1,37 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
   color: #333;
 }
 
 h1, h2 {
+  text-align: center;
   color: #333;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-#menu, #cart {
-  margin-top: 20px;
-  width: 100%;
+#menu, #cart, #filters {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
 .menu-item, .cart-item {
-  background: #fff;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 2.5em;
+  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -41,18 +42,76 @@ h1, h2 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.menu-item button, .cart-item button {
-  padding: 10px 15px;
-  background: #28a745;
+.cart-total {
+  font-weight: bold;
+  text-align: right;
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #28a745;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
   transition: background 0.2s ease;
 }
 
-.menu-item button:hover, .cart-item button:hover {
-  background: #218838;
+button:hover {
+  background-color: #218838;
+}
+
+#search {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#confirmation-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: darkred;
 }
 
 @media (max-width: 600px) {
