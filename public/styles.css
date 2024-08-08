@@ -38,6 +38,7 @@ h1, h2 {
 }
 
 .menu-item:hover, .cart-item:hover {
+  background-color: #77BA5B;
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
