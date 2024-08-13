@@ -42,6 +42,7 @@
       "price": 50000,
       "category": "cena",
       "quantity": 1
+
     }
   ],
   [
@@ -97,6 +98,8 @@
       "price": 35000,
       "category": "cena",
       "quantity": 1
+=======
+>>>>>>> 5bbbc3f313568f43d3cefc17fcd1758f3c907806
     }
   ]
 ]

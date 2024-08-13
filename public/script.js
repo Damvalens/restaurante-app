@@ -45,7 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-menuDiv.addEventListener('click', (e) => {
+
+  menuDiv.addEventListener('click', (e) => {
+>>>>>>> 5bbbc3f313568f43d3cefc17fcd1758f3c907806
   if (e.target.tagName === 'BUTTON') {
     const itemId = e.target.getAttribute('data-id');
     const item = menu.find(i => i.id == itemId);
@@ -92,7 +94,7 @@ cartDiv.addEventListener('click', (e) => {
   }
 });
 
-
+>>>>>>> 5bbbc3f313568f43d3cefc17fcd1758f3c907806
   function updateCart() {
     cartDiv.innerHTML = '';
     let total = 0;
@@ -186,4 +188,8 @@ cartDiv.addEventListener('click', (e) => {
   });
 
   updateCart();
+<<<<<<< HEAD
 });
+=======
+})
+>>>>>>> 5bbbc3f313568f43d3cefc17fcd1758f3c907806
