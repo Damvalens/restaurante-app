@@ -42,7 +42,6 @@
       "price": 50000,
       "category": "cena",
       "quantity": 1
-
     }
   ],
   [
@@ -98,8 +97,31 @@
       "price": 35000,
       "category": "cena",
       "quantity": 1
-=======
->>>>>>> 5bbbc3f313568f43d3cefc17fcd1758f3c907806
+    }
+  ],
+  [
+    {
+      "id": 8,
+      "name": "🍣 Sushi",
+      "price": 35000,
+      "category": "cena",
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 4,
+      "name": "🌮 Tacos",
+      "price": 30000,
+      "category": "cena",
+      "quantity": 1
     }
   ]
 ]
