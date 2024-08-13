@@ -2,88 +2,101 @@
   [
     {
       "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 8,
+      "name": "🍣 Sushi",
+      "price": 35000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "name": "🥞 Panqueques",
+      "price": 10000,
+      "category": "desayuno",
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "name": "🍲 Sopa",
+      "price": 15000,
+      "category": "almuerzo",
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "name": "🍣 Sushi",
+      "price": 35000,
+      "category": "cena",
+      "quantity": 1
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "🍕 Pizza",
+      "price": 50000,
+      "category": "cena",
+      "quantity": 1
     },
     {
       "id": 2,
-      "name": "Pizza",
-      "price": 7000
-    },
-    {
-      "id": 3,
-      "name": "Ensalada",
-      "price": 4000
-    },
-    {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
+      "name": "🍔 Hamburguesa",
+      "price": 25000,
+      "category": "almuerzo",
+      "quantity": 1
     }
   ],
   [
     {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
-    },
-    {
-      "id": 2,
-      "name": "Pizza",
-      "price": 7000
-    },
-    {
-      "id": 3,
-      "name": "Ensalada",
-      "price": 4000
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
-    },
-    {
-      "id": 2,
-      "name": "Pizza",
-      "price": 7000
-    },
-    {
-      "id": 3,
-      "name": "Ensalada",
-      "price": 4000
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
-    },
-    {
-      "id": 2,
-      "name": "Pizza",
-      "price": 7000
-    },
-    {
-      "id": 3,
-      "name": "Ensalada",
-      "price": 4000
-    }
-  ],
-  [
-    {
-      "id": 1,
-      "name": "Hamburguesa",
-      "price": 5000
+      "id": 8,
+      "name": "🍣 Sushi",
+      "price": 35000,
+      "category": "cena",
+      "quantity": 1
     }
   ]
 ]

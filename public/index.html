@@ -1,18 +1,38 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menú del Restaurante</title>
+  <title>BIENVENIDOS A KOMBINI🍙🍘</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Menú del Restaurante</h1>
+  <h1>BIENVENIDOS A KOMBINI🍙🍘</h1>
+  
+  <div id="filters">
+    <button data-category="all">Todos</button>
+    <button data-category="desayuno">Desayuno ☕</button>
+    <button data-category="almuerzo">Almuerzo 🍽</button>
+    <button data-category="cena">Cena🍝</button>
+  </div>
+  
+  <input type="text" id="search" placeholder="🔎Buscar en el menú...">
   <div id="menu"></div>
-  <h2>Carrito</h2>
+
+  <h2>Carrito 🛒</h2>
   <div id="cart"></div>
+  <div id="place-order">
   <button id="place-order">Realizar Pedido</button>
+
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Confirmación de Pedido</h2>
+      <div id="order-summary"></div>
+      <button id="confirm-order">¿Desea confirmar su pedido?😺</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
