@@ -46,21 +46,51 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   menuDiv.addEventListener('click', (e) => {
-    if (e.target.tagName === 'BUTTON') {
-      const itemId = e.target.getAttribute('data-id');
-      const item = menu.find(i => i.id == itemId);
-      const cartItem = cart.find(i => i.id == itemId);
+  if (e.target.tagName === 'BUTTON') {
+    const itemId = e.target.getAttribute('data-id');
+    const item = menu.find(i => i.id == itemId);
+    const cartItem = cart.find(i => i.id == itemId);
 
-      if (cartItem) {
-        cartItem.quantity++;
-      } else {
-        item.quantity = 1;
-        cart.push(item);
-      }
-
-      updateCart();
+    if (cartItem) {
+      cartItem.quantity++;
+    } else {
+      item.quantity = 1;
+      cart.push(item);
     }
-  });
+
+    // Deshabilitar el botón después de agregar al carrito
+    e.target.disabled = true;
+    e.target.classList.add('button-disabled');
+    e.target.innerText = 'Agregado';
+
+    updateCart();
+  }
+});
+
+cartDiv.addEventListener('change', (e) => {
+  if (e.target.tagName === 'INPUT') {
+    const itemIndex = e.target.getAttribute('data-index');
+    cart[itemIndex].quantity = parseInt(e.target.value);
+    updateCart();
+  }
+});
+
+cartDiv.addEventListener('click', (e) => {
+  if (e.target.tagName === 'BUTTON') {
+    const itemIndex = e.target.getAttribute('data-index');
+    const itemId = cart[itemIndex].id;
+    cart.splice(itemIndex, 1);
+    updateCart();
+
+    // Reactivar el botón en el menú
+    const menuItemButton = document.querySelector(`button[data-id="${itemId}"]`);
+    if (menuItemButton) {
+      menuItemButton.disabled = false;
+      menuItemButton.classList.remove('button-disabled');
+      menuItemButton.innerText = 'Agregar al carrito';
+    }
+  }
+});
 
   function updateCart() {
     cartDiv.innerHTML = '';
