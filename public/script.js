@@ -114,22 +114,6 @@ cartDiv.addEventListener('click', (e) => {
     cartDiv.appendChild(totalDiv);
 
     localStorage.setItem('cart', JSON.stringify(cart));
-
-    cartDiv.addEventListener('change', (e) => {
-      if (e.target.tagName === 'INPUT') {
-        const itemIndex = e.target.getAttribute('data-index');
-        cart[itemIndex].quantity = parseInt(e.target.value);
-        updateCart();
-      }
-    });
-
-    cartDiv.addEventListener('click', (e) => {
-      if (e.target.tagName === 'BUTTON') {
-        const itemIndex = e.target.getAttribute('data-index');
-        cart.splice(itemIndex, 1);
-        updateCart();
-      }
-    });
   }
 
   function showModal() {
