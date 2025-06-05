@@ -48,6 +48,10 @@ app.post('/orders', (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Servidor corriendo en http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+  });
+}
+
+module.exports = { app, menu };
